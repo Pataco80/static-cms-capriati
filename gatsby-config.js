@@ -16,15 +16,13 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-image`,
+    `gatsby-plugin-static-cms`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
-    },
-    {
-      resolve: `gatsby-plugin-static-cms`,
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
